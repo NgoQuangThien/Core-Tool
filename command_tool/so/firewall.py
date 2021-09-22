@@ -7,7 +7,7 @@ from so.config.config_firewall import create_new_config, create_new_chain, creat
 from so.proc_yaml.modify_pillar_file import safe_load_yml, check_item, add_new_config, overwrite_pillar
 
 
-directory = 'C:/Users/Ngo Quang Thien/OneDrive - actvn.edu.vn/SIEM/CODE/command_tool/'
+directory = '/opt/so/saltstack/local/pillar/minions/'
 
 
 def add_host_group(group_name):

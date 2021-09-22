@@ -36,7 +36,7 @@ def overwrite_pillar(file, new_config):
 
 
 def sync_config(server_name, server_role, service):
-    cmd = 'sudo salt' + ' ' + server_name + '_' + server_role + 'state.apply' + ' ' + service
+    cmd = 'sudo salt' + ' ' + server_name + '_' + server_role + ' ' + 'state.apply' + ' ' + service
     result = subprocess.Popen(cmd,
                               stdout=subprocess.PIPE,
                               stderr=subprocess.PIPE,

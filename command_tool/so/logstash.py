@@ -3,7 +3,7 @@ from so.config.config_logstash import create_new_config
 from so.proc_yaml.modify_pillar_file import safe_load_yml, check_item, add_new_config
 
 
-directory = 'C:/Users/Ngo Quang Thien/OneDrive - actvn.edu.vn/SIEM/CODE/command_tool/'
+directory = '/opt/so/saltstack/local/pillar/minions/'
 
 
 def add_pipeline_to_server(server_name, server_role):
