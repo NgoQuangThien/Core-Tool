@@ -1,0 +1,13 @@
+[Unit]
+Description=Pull data from Redis-server to file - Author: ThienNQ
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /source/Redis/redis-pull/redis-pull.py
+User=root
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+Alias=redis-pull.service

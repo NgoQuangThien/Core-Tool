@@ -1,0 +1,14 @@
+[Unit]
+Description=Author: ThienNQ
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /source/bids/detect_new_device/main.py
+User=root
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+Alias=bids-newdevice.service
+

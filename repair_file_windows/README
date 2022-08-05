@@ -1,0 +1,17 @@
+#1.	Cài đặt service
+1.1. Giải nén file "RepairFileEndpoint.zip" vào ổ C
+1.2.	Chạy PowerShell với quyền Admin
+1.3.	cd tới thư mục cài đặt
+1.4.	nhập .\install.ps1 vào terminal
+
+#2.	Kiểm tra dịch vụ sau khi cài đặt
+2.1.	Mở trình quản lý service (bấm phím Windows + gõ service vào thanh tim kiếm để mở trình quản lý)
+2.2.	Tìm service có tên "Repair File" và kiểm tra tình trạng
+2.3.1.	Nếu service có Status là Running thì việc cài đặt thành công
+2.3.2.	Nếu cài đặt không thành công, xem phần 3 - Sửa lỗi cài đặt dịch vụ không thể khởi động
+
+#3.	Sửa lỗi cài đặt dịch vụ không thể khởi động
+3.1.	Mở lại thư mục cài đặt
+3.2. Di chuyển tới thư mục python và chạy file "python.exe"
+3.3.	Nếu xuất hiện lỗi "The application was unable to start correctly (0xc000007b). Click OK to close the application" => chạy file "vc_redist.x64.exe"
+3.4.	Mở lại file "python.exe". Nếu thành công thì quay lại bước 1 để cài đặt dịch vụ.
